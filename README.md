@@ -4,7 +4,7 @@ this is an example of a library, using node-js, express and mongodb
 
 #init 
 
-## use in terminal the command
+#use in terminal the command
 npm install 
 
 
