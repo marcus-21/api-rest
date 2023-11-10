@@ -16,30 +16,6 @@ conexao.once("open", ()=>{
 const app = express();
 routes(app);
 
-
-app.get("/livros/:id", (req, res) => {
-  const index = buscarLivroPorId(req.params.id);
-  res.status(201).json(livros[index]);
-  
-})
-
-app.post("/livros", (req, res) => {
-  livros.push(req.body);
-  res.status(201).send("Livro criado com sucesso ✅");
-})
-
-app.put("/livros/:id", (req, res) => {
-  const index = buscarLivroPorId(req.params.id);
-  livros[index].titulo = req.body.titulo;
-  res.status(200).json(livros)
-})
-
-app.delete("/livros/:id", (req, res) => {
-  const index = buscarLivroPorId(req.params.id);
-  livros.splice(index, 1);
-  res.status(200).send("Livro excluido com sucesso ✅");
-})
-
 export default app;
 
 
