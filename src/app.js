@@ -17,21 +17,3 @@ const app = express();
 routes(app);
 
 export default app;
-
-
-// const livros = [
-//   {
-//     id: 1,
-//     titulo: "O Senhor dos Aneis"
-//   },
-//   {
-//     id: 2,
-//     titulo: "As Crônicas de Gelo e Fogo"
-//   }
-// ]
-
-// function buscarLivroPorId(id){
-//   return livros.findIndex((livros)=>{
-//     return livros.id === Number(id)
-//   })
-// }
